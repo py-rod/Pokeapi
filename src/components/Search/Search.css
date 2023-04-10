@@ -1,0 +1,15 @@
+.input-search {
+    border: 1px solid gray;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-search:focus {
+    outline: 1px solid black;
+}
+
+.button-search-pokemon {
+    border: none;
+    color: white;
+    background-color: royalblue;
+    border-radius: 0 5px 5px 0;
+}

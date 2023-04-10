@@ -1,0 +1,350 @@
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del fondo del pulgar */
+    border-radius: 5px;
+    /* Radio de la esquina del pulgar */
+}
+
+/* Estilo del área de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+    /* Color de fondo de la barra de desplazamiento */
+}
+
+main {
+    min-height: 100vh;
+    padding: 20px 30px;
+}
+
+.pokedex {
+    background-color: rgb(254, 1, 100);
+    max-width: 600px;
+    height: 650px;
+    margin: 0 auto;
+    min-height: 80vh;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.pokedex>div:nth-child(1) {
+    height: 100px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(1)>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 7px;
+    background-color: rgb(51, 153, 203);
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(1)>div>div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(212, 217, 250);
+}
+
+
+.pokedex>div:nth-child(1)>div:nth-child(2) {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    padding: 10px 0 10px 30px;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
+    background-color: rgb(255, 0, 0);
+    padding: 3px 5px;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) {
+    background-color: rgb(255, 202, 101);
+    padding: 3px 5px;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div:nth-child(3) {
+    background-color: rgb(50, 202, 100);
+    padding: 3px 5px;
+}
+
+.pokedex>div:nth-child(1)>div:nth-child(2)>div:nth-child(3)>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+.content-view-pokemons {
+    background-color: rgb(254, 255, 254);
+    width: 360px;
+    height: 285px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 0 0 0 40px;
+}
+
+
+.content-view-pokemons>div:nth-child(1) {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content-view-pokemons>div:nth-child(1)>div {
+    width: 12px;
+    height: 12px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.content-view-pokemons>div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 5px 20px;
+}
+
+.content-view-pokemons>div:nth-child(3)>div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid black;
+    padding: 5px 7px;
+    background-color: rgb(252, 16, 16);
+}
+
+.content-view-pokemons>div:nth-child(3)>div>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(247, 213, 213);
+}
+
+
+
+
+
+
+
+.content-pokemons {
+    height: 200px;
+    width: 300px;
+    overflow-y: scroll;
+    margin: auto;
+    border: 4px solid black;
+    border-radius: 7px;
+    padding: 5px;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+
+.content-card {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.content-card>img {
+    display: block;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.content-card>div {
+    height: 100%;
+    width: 60%;
+
+}
+
+.content-card>div>h1 {
+    font-size: 1rem;
+    height: 100%;
+    text-transform: capitalize;
+}
+
+
+
+.button-fetch-pokes {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(55, 105, 241);
+    color: white;
+}
+
+
+
+
+
+/* TYPES POKEMONS */
+
+.content-card>div>div>p {
+    color: white;
+    width: fit-content;
+    padding: 3px 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+
+.grass {
+    background-color: rgb(120, 201, 81);
+}
+
+.normal {
+    background-color: rgb(168, 168, 120);
+}
+
+.flying {
+    background-color: rgb(169, 144, 241);
+}
+
+.fighting {
+    background-color: rgb(192, 49, 41);
+}
+
+.poison {
+    background-color: rgb(160, 64, 160);
+}
+
+.ground {
+    background-color: rgb(225, 193, 104);
+}
+
+.rock {
+    background-color: rgb(184, 161, 57);
+}
+
+.bug {
+    background-color: rgb(168, 185, 33);
+}
+
+.ghost {
+    background-color: rgb(113, 88, 153);
+}
+
+.steel {
+    background-color: rgb(185, 185, 208);
+}
+
+.fire {
+    background-color: rgb(240, 129, 49);
+}
+
+.water {
+    background-color: royalblue;
+}
+
+.electric {
+    background-color: rgb(248, 209, 49);
+}
+
+.psychic {
+    background-color: rgb(248, 88, 136);
+}
+
+.ice {
+    background-color: rgb(152, 216, 216);
+}
+
+.dragon {
+    background-color: rgb(113, 56, 249);
+}
+
+.dark {
+    background-color: rgb(113, 88, 73);
+}
+
+.fairy {
+    background-color: rgb(255, 175, 200);
+}
+
+.unknown {
+    background-color: black;
+}
+
+.shadow {
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+
+/* Input Search */
+
+.content-input-search {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 40px;
+}

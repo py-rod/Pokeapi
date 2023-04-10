@@ -1,0 +1,17 @@
+.header{
+    background-color: #ff002b;
+    box-shadow:  0 5px 8px gray;
+    width: 100%;
+}
+
+.navbar{
+    max-width: 1900px ;
+    margin: 0 auto;
+}
+
+
+.header-logo{
+    width: 120px;
+    display: block;
+    object-fit: cover;
+}
